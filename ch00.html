@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 00 자바스크립트 기초</title>
+</head>
+<body>
+<script>
+/* 변수 선언 */
+// 변수 : 값을 담기 위한 공간
+// 변수 선언 방법1: let
+let username1 = "jeonyoujin";
+console.log(username1);
+// 변수 선언 방법2: const
+const username2 = "jeonyoujin";
+console.log(username2);
+// 변수 재할당
+username1 = "jeon";
+username2 = "youjin";
+console.log(username1);
+console.log(username2); // Uncaught TypeError(재할당 불가)
+</script>
+</body>
+</html>
