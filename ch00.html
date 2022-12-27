@@ -18,9 +18,41 @@ const username2 = "jeonyoujin";
 console.log(username2);
 // 변수 재할당
 username1 = "jeon";
-username2 = "youjin";
+//username2 = "youjin";
 console.log(username1);
-console.log(username2); // Uncaught TypeError(재할당 불가)
+//console.log(username2); // Uncaught TypeError(재할당 불가)
+
+
+/* 객체 */
+// 객체 생성
+const car = {
+    wheels: 4,
+    color: "red",
+    drive: function() {
+        console.log("wroom wroom")
+    },
+};
+console.log(Object.keys(car)[0]); // wheels
+console.log(Object.keys(car)[1]); // color
+car.drive(); // wroom wroom
+// 점 표기법
+console.log(car.wheels);
+// 대괄호 표기법
+console.log(car['color']);
+// 빈 객체 생성
+const sportscar = {};
+sportscar.color = 'yellow';
+console.log(sportscar.color);
+// 사용자 입력 예제
+const cars = {
+    ferrari: "california",
+    porsche: "911",
+    bugatti: "veyron",
+};
+const key = "porsche";
+//console.log(cars.key); // undefined
+//console.log(cars['key']); // undefined
+console.log(cars[key]); // 911
 </script>
 </body>
 </html>
