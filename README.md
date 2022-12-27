@@ -1,2 +1,2 @@
 # TIL
-Today I Learned (Book: Complete Guide to Modern JavaScript)
+Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide to Modern JavaScript))
