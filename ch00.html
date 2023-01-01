@@ -53,6 +53,25 @@ const key = "porsche";
 //console.log(cars.key); // undefined
 //console.log(cars['key']); // undefined
 console.log(cars[key]); // 911
+
+
+/* 객체 복사 */
+let thirdCar = {
+    color : 'pink',
+};
+// 단순히 car에 대한 참조만 저장 
+let fourthCar = thirdCar;
+thirdCar.wheels = 3;
+console.log(thirdCar);
+console.log(fourthCar);
+// Object.assign() 사용
+const firstCar = {
+    color : 'red',
+};
+const secondCar = Object.assign({},firstCar);
+firstCar.wheels = 5;
+console.log(firstCar);
+console.log(secondCar); // color만 표시
 </script>
 </body>
 </html>
