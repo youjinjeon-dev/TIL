@@ -161,6 +161,49 @@ if (myInt2 === 1) {
     console.log(mySecondInt);
 }
 //console.log(mySecondInt2);
+
+
+/* this */
+const myDadCar = {
+    color : 'black',
+    logColor1 : function() {
+        console.log(this.color);
+    },
+};
+myDadCar.logColor1();
+// .bind() - this 값 수동 설정 
+const myMomCar = {
+    color : 'white',
+    logColor2 : function() {
+        console.log(this.color); 
+    },
+};
+const unboundGetColor = myMomCar.logColor2;
+console.log(unboundGetColor()); 
+const boundGetColor = unboundGetColor.bind(myMomCar);
+console.log(boundGetColor());
+// .call() - 인수의 목록을 받음
+function Car(maker, color) {
+    this.carMaker = maker;
+    this.carColor = color;
+}
+function MyCar1(maker, color) {
+    Car.call(this, maker, color);
+}
+const myNewCar = new MyCar1('bmw', 'red');
+console.log(myNewCar.carMaker);
+console.log(myNewCar.carColor);
+// .apply() - 하나의 인수 배열을 받음 
+function Car1(maker, color) {
+    this.carMaker = maker;
+    this.carColor = color;
+}
+function myCar2(maker, color) {
+    Car1.apply(this, [maker, color]);
+}
+const myNewCar1 = new myCar2('bmw', 'blue');
+console.log(myNewCar1.carMaker);
+console.log(myNewCar1.carColor);
 </script>
 </body>
 </html>
