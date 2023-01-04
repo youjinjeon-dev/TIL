@@ -140,6 +140,27 @@ const greeter2 = (name) => {
     console.log("hello " + name);
 }
 greeter2("youjin");
+
+
+/* 스코프 */
+// 전역 스코프 : 코드 어느 곳에서나 접근 가능
+// 블록 스코프 : 변수가 선언된 블록(함수, 루프, 중괄호) 내부에서만 접근 가능
+// 예시 1
+// var키워드로 선언된 변수는 블록 스코프를 가지지 않음 
+var myInt1 = 1;
+if (myInt1 === 1) {
+    var mySecondInt = 2;
+    console.log(mySecondInt);
+}
+console.log(mySecondInt);
+// 예시 2
+// let, const키워드로 선언된 변수는 변수가 선언된 위치에 해당하는 블록 스코프를 가짐
+var myInt2 = 1;
+if (myInt2 === 1) {
+    let mySecondInt = 2;
+    console.log(mySecondInt);
+}
+//console.log(mySecondInt2);
 </script>
 </body>
 </html>
