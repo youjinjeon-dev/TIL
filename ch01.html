@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 01 var, let, const</title>
+</head>
+<body>
+    <script>
+        /* var */
+        // var로 선언된 변수는 함수 스코프에 종속
+        // for 루프 내에서 선언한 경우, for 루프 밖에서도 사용 가능
+        for (var i = 0; i < 10; i++) {
+            var leak = "I am available outside of the loop";
+        }
+        console.log(leak);
+        function myFunc() {
+            var functionScoped = "I am available outside of the loop";
+            console.log(functionScoped);
+        }
+        myFunc();
+        //console.log(functionScoped); // ReferenceError
+
+
+        /* let */
+        // let 키워드로 선언된 변수는 블록 스코프로 종속
+        // 변수가 선언된 블록과 하위 블록 내에서만 사용
+        // 새 값을 할당할 경우, 블록 바깥에서는 값이 변경되지 않음 
+        // let과 var 비교 예제 
+        let x = "global";
+        if ( x === "global") {
+            let x = "block-scoped";
+            console.log(x);
+        }
+        console.log(x);
+
+        var y = "global";
+        if ( y === "global") {
+            var y = "block-scoped";
+            console.log(y);
+        }
+        console.log(y); // var은 블록 스코프 외부에서 접근 가능, 따라서 값이 변경됨
+
+
+        /* const */
+        // 블록 스코프에 종속
+        // 재할당 불가, 재선언 불가
+        // 예제 1
+        const constant = "I am Youjin";
+        //constant = "am i Youjin?";
+        //console.log(constant); // Uncaught TypeError
+        // 예제 2
+        // 변수 전체 할당이 아니라 속성 중 하나만 재할당하므로 문제 없음 
+        const person = {
+            name : 'youjin',
+            age : 26,
+        };
+        person.age = 27;
+        console.log(person.age);
+        // 객체의 내용 변경할 수 없게 const 객체를 고정
+        // 자바스크립트 오류 메세지 발생하지 않음
+        Object.freeze(person);
+        person.age = 28;
+        console.log(person.age); //27
+
+
+        /* quiz 2번 */
+        // 다음 코드의 올바른 출력은?
+        // 결과 : 2
+        let value = 1;
+        if (true) {
+            let value = 2;
+            console.log(value);
+        }
+        value = 3;
+    </script>
+</body>
+</html>
