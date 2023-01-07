@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 02 화살표 함수</title>
+    <style>
+        .opening{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>This is a box</p>
+    </div>
+    <script>
+    /* 화살표 함수 */
+    var greeting = (name) => {
+        return 'hello ${name}';
+    };
+    // 매개벽수 하나인 경우, 괄호 생략 가능
+    var greeting = name => {
+        return 'hello ${name}';
+    }
+    // 매개변수가 전혀 없는 경우, 빈 괄호 사용
+    var greeting = () => {
+        return "hello";
+    }
+    // 객체 리터럴 암시적으로 반환
+    const race = "100m dash";
+    const runners = ["Usain Bolt", "Justin Gatlin", "Asafa Powell"];
+    const results = 
+    runners.map((runner, i) => ({name: runner, race, place: i+1}));
+    console.log(results);
+    // 화살표 함수 = 익명 함수
+    const greeting1 = name => 'hello ${name}';
+    greeting("Tom");
+    </script>
+    <script src="ch02.js"></script> 
+</body>
+</html>
