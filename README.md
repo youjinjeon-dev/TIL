@@ -21,9 +21,9 @@ Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide
 
 * error= Uncaught TypeError : box1.addEventListener is not a function
 
-원인= 코드 스펠 미스(addEventListner -> addEventListener)
+  원인= 코드 스펠 미스(addEventListner -> addEventListener)
 
-해결 방법= code spell checker 다운로드함.
+  해결 방법= code spell checker 다운로드함.
 
 
 < chapter03 ~  >
