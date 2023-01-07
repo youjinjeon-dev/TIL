@@ -14,6 +14,8 @@ Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide
 
 
 < chapter02 화살표 함수 >
+
+
 error :
 
 원인 : 코드 스펠 미스(addEventListner -> addEventListener)
