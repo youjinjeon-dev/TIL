@@ -1,14 +1,14 @@
 # TIL
 Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide to Modern JavaScript))
 
-< chapter00 자바스크립트 기초 >  
+<h3>< chapter00 자바스크립트 기초 ></h3>  
 
 
 
 
 
 
-< chapter01 var, let, const >
+<h3>< chapter01 var, let, const ></h3>
 
 
 내용
@@ -16,7 +16,7 @@ Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide
 
 
 
-< chapter02 화살표 함수 >
+<h3>< chapter02 화살표 함수 ></h3>
 
 
 * error= Uncaught TypeError : box1.addEventListener is not a function
@@ -26,5 +26,5 @@ Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide
   해결 방법= code spell checker 다운로드함.
 
 
-< chapter03 ~  >
+<h3>< chapter03 ~  ></h3>
 잠시 중단 
