@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 03 함수 기본값 인수</title>
+</head>
+<body>
+    <script>
+       function getLocation(city, country, continent) {
+        if (typeof country === 'undefined') {
+            country = 'Italy';
+        }
+        if (typeof continent === 'undefined') {
+            continent = 'Europe';
+        }
+        console.log(`City: ${city}, Country: ${country}, Continent: ${continent}`);
+       } 
+       getLocation('Milan');
+        getLocation('Paris', 'France');
+    </script>
+</body>
+</html>
