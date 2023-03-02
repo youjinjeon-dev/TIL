@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        // 함수 인수의 기본값 (ES6 이전)
        function getLocation(city, country, continent) {
         if (typeof country === 'undefined') {
             country = 'Italy';
@@ -19,6 +20,20 @@
        } 
        getLocation('Milan');
         getLocation('Paris', 'France');
+
+       // 함수 인수의 기본값 (ES6)
+        function calculatePrice1(total, tax = 0.1, tip = 0.05) {
+           return total + (total * tax) + (total * tip);
+        }
+        const result = calculatePrice1(100, undefined, 0.15);
+        console.log(result);
+
+        function calculatePrice2({total = 0, tax = 0.1, tip = 0.05} = {}) {
+            return total + (total * tax) + (total * tip);
+        }
+        const bill = calculatePrice2({tip:0.15, total: 150});
+        console.log(bill);
+
     </script>
 </body>
 </html>
