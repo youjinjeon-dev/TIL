@@ -28,3 +28,8 @@ Today I Learned (Book: 모던 자바스크립트 핵심 가이드(Complete Guide
 
 <h3>< chapter03 ~  ></h3>
 잠시 중단 
+
+<h3>< chapter04 ~  ></h3>
+map(function()) : 새로운 함수를 리턴<br>
+ex: let a = [1, 2, 3]; <br>
+a.map(x => x*x) // [1, 4, 9]<br>
