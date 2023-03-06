@@ -60,6 +60,30 @@
     </div>
     `;
     console.log(text);
+
+    // 템플릿 리터럴에 함수 전달하기
+    const groceries = {
+        meat: "pork chop",
+        veggie: "salad",
+         fruit: "apple",
+        others: ['mushrooms', 'instant noodles', 'instant soup'],
+    };
+    function groceryList(others) {
+        return `
+        <p>
+            ${others.map( other => ` <span>${other}</span>`).join('\n')}
+        </p>
+        `;
+    }
+    const markup2 = `
+    <div>
+        <p>${groceries.meat}</p>
+        <p>${groceries.veggie}</p>
+        <p>${groceries.fruit}</p>
+        <p>${groceryList(groceries.others)}</p>
+    <div>
+    `;
+    console.log(markup2);
     </script>
 </body>
 </html>
