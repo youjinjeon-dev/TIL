@@ -35,4 +35,10 @@ a.map(x => x*x) // [1, 4, 9]<br>
 백틱 사용법 추가 <br><br>
 
 <h3>< chapter05 템플릿 리터럴 ></h3>
+  <li> slice() 메서드 <br>
+    ex) const str = "pizza, orange, cereals"; <br>
+    str.slice(0,5); // 0,5는 인덱스 번호(숫자 사이의 순서) <br>
+    출력 결과 : pizza<br>
+    &nbsp; p&nbsp;&nbsp; i&nbsp;&nbsp; z&nbsp;&nbsp; z &nbsp;&nbsp;a <br>
+    0&nbsp;&nbsp; 1&nbsp;&nbsp; 2&nbsp;&nbsp; 3 &nbsp;&nbsp;4&nbsp;&nbsp; 5 
 
