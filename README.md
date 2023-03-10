@@ -34,7 +34,7 @@ a.map(x => x*x) // [1, 4, 9]<br>
 
 백틱 사용법 추가 <br><br>
 
-<h3>< chapter05 템플릿 리터럴 ></h3>
+<h3>< chapter05 문자열 메서드 ></h3>
   <li> slice() 메서드 <br>
     ex) const str = "pizza, orange, cereals"; <br>
     str.slice(0,5); // 0,5는 인덱스 번호(숫자 사이의 순서) <br>
