@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 05 문자열 메서드</title>
+</head>
+<body>
+    <script>
+        // startsWith()
+        const code1 = "ABCDEFG";
+        console.log(code1.startsWith("ABB"));
+        console.log(code1.startsWith("ABC"));
+        console.log(code1.startsWith("DEF", 3)); // 시작점 지정 
+
+        // endsWith()
+        const code2 = "ABCDEFGHI";
+        console.log(code2.endsWith("DDD"));
+        console.log(code2.endsWith("DEF"));
+        console.log(code2.endsWith("ghi"));
+        console.log(code2.endsWith("GHI"));
+        console.log(code2.endsWith("DEF", 6));
+
+        // includes()
+        const code3 = "ABCDEFG";
+        console.log(code3.includes("ABB"));
+        console.log(code3.includes("FG"));
+        console.log(code3.includes("cde"));
+
+        // repeat()
+        let hello = "HI";
+        console.log(hello.repeat(10));
+    </script>
+</body>
+</html>
