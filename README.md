@@ -40,5 +40,19 @@ a.map(x => x*x) // [1, 4, 9]<br>
     str.slice(0,5); // 0,5는 인덱스 번호(숫자 사이의 순서) <br>
     출력 결과 : pizza<br>
     &nbsp; p&nbsp;&nbsp; i&nbsp;&nbsp; z&nbsp;&nbsp; z &nbsp;&nbsp;a <br>
-    0&nbsp;&nbsp; 1&nbsp;&nbsp; 2&nbsp;&nbsp; 3 &nbsp;&nbsp;4&nbsp;&nbsp; 5 
+    0&nbsp;&nbsp; 1&nbsp;&nbsp; 2&nbsp;&nbsp; 3 &nbsp;&nbsp;4&nbsp;&nbsp; 5 <br><br><br>
 
+<h3>< chapter06 디스트럭처링 ></h3>
+디스트럭처링 : 배열의 값, 객체의 속성을 풀어서 별개의 변수로 사용 가능<br>
+<li>기본값 설정 <br>
+const person = {<br>
+&nbsp;links: {<br>
+&nbsp;&nbsp;social: {<br>
+&nbsp;&nbsp;&nbsp;facebook: "https://www.facebook.com/alberto.montalesi"},<br>
+&nbsp;},<br>
+&nbsp;};<br>
+// 변수를 fb로 명명하고 기본값을 설정<br>
+const {facebook: fb = "https://www.facebook.com"} = persons.links.social; </li>
+<li> 배열 디스트럭처링 : {} 대신에 [] 사용 <br>
+const person = ["Alberto", "Montalesi", 25];<br>
+const [name, surname, age] = person;</li>
