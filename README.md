@@ -55,4 +55,10 @@ const person = {<br>
 const {facebook: fb = "https://www.facebook.com"} = persons.links.social; </li>
 <li> 배열 디스트럭처링 : {} 대신에 [] 사용 <br>
 const person = ["Alberto", "Montalesi", 25];<br>
-const [name, surname, age] = person;</li>
+const [name, surname, age] = person;</li><br><br><br>
+
+<h3>< chapter07 루프 ></h3>
+<li>for of와 for in의 차이<br>
+let list = [4, 5, 6];<br>
+for in : 키의 목록 반환 (0, 1, 2)<br>
+for of : 값을 반환(4, 5, 6)</li>
