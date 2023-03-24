@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 08 배열 메서드</title>
+</head>
+<body>
+    <div class="fruits">
+        <p> Apple </p>
+        <p> Banana </p>
+        <p> Orange </p>
+    </div>
+    <script>
+        // 방법 1
+        const fruits1 = document.querySelectorAll(".fruits p");
+        // fruits를 배열로 변환
+        const fruitArray = Array.from(fruits1);
+        console.log(fruitArray);
+
+        const fruitNames1 = fruitArray.map(fruit => fruit.textContent);
+        console.log(fruitNames1);
+
+        // 방법 2 좀 더 단순화
+        const fruits2 = Array.from(document.querySelectorAll("p"));
+        const fruitNames2 = fruits2.map(fruit => fruit.textContent);
+        console.log(fruitNames2);
+
+        // 방법 3 Array.from()의 두 번째 인수 활용
+        const fruits3 = document.querySelectorAll(".fruits p");
+        const fruitArray3 = Array.from(fruits3, fruit => {
+            console.log(fruit);
+            return fruit.textContent;
+        });
+        console.log(fruitArray3);
+    </script>
+</body>
+</html>
