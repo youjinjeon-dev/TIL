@@ -8,9 +8,23 @@
 </head>
 <body>
     <script>
+        // Array.of()
         // 전달받은 모든 인수로 배열을 생성
         const digits = Array.of(1, 2, 3, 4, 5);
         console.log(digits);
+
+        // Array.find()
+        // 테스트 함수를 충족하는 배열의 첫 번째 원소를 반환
+        // 충족하는 원소가 없으면 undefined 반환
+        const array = [1, 2, 3, 4, 5];
+        let found = array.find( e => e > 3);
+        console.log(found);
+
+        // Array.findIndex()
+        // 조건과 일치하는 첫 번째 원소의 인덱스를 반환
+        const greetings = ["hello", "hi", "byebye", "goodbye", "hi"];
+        let foundIndex = greetings.findIndex(e => e === "hi");
+        console.log(foundIndex);
     </script>
 </body>
 </html>
