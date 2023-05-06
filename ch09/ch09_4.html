@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 09 스프레드 연산자와 레스트 매개변수</title>
+</head>
+<body>
+    <script>
+        // 레스트 매개변수
+        const runners = ["Tom", "Paul", "Mark", "Luke"];
+        const [first, second, ...losers] = runners;
+        console.log(...losers);
+    </script>
+</body>
+</html>
