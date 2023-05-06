@@ -37,6 +37,16 @@
             console.log(`Hello ${first} ${last}`);
         }
         greet(...name2);
+
+        // 객체 리터럴과 스프레드(ES2018)
+        let person = {
+            name: "Alberto",
+            surname: "Montalesi",
+            age: 25,
+        };
+
+        let clone = {...person};
+        console.log(clone);
     </script>
 </body>
 </html>
