@@ -61,4 +61,11 @@ const [name, surname, age] = person;</li><br><br><br>
 <li>for of와 for in의 차이<br>
 let list = [4, 5, 6];<br>
 for in : 키의 목록 반환 (0, 1, 2)<br>
-for of : 값을 반환(4, 5, 6)</li>
+for of : 값을 반환(4, 5, 6)</li><br><br><br>
+
+
+<h3>< chapter09 스프레드 연산자와 레스트 매개변수 ></h3>
+<li>형태 : 점 3개 <br>
+ex) greet(...name); <br>
+스프레드 : 배열 확장<br>
+레스트: 여러 원소를 하나의 원소로 합축<br></li><br><br><br>
