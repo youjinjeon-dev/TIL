@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 12 클래스</title>
+</head>
+<body>
+    <script>
+        // 프로토 타입
+        /* function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Person.prototype.greet = function() {
+            console.log("Hello, my name is " + this.name);
+        }
+
+        const alberto = new Person("Alberto", 26);
+        const caroline = new Person("Caroline", 26);
+
+        alberto.greet();
+        caroline.greet(); */
+
+        // 클래스 생성
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            greet() {
+                console.log(`Hi, my name is ${this.name} and I'm ${this.age} years old`);
+            }
+            farewell() {
+                console.log("goodbye friend");
+            }
+        }
+        const alberto2 = new Person("Alberto", 26);
+        alberto2.greet();
+        alberto2.farewell();
+    </script>
+</body>
+</html>
